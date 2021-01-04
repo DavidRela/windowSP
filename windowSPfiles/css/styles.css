@@ -1,0 +1,210 @@
+/*-----------------------------*/
+/*--- FONT ---*/
+/*-----------------------------*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgK_7SodY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgIv7SodY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgKv7SodY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJf7SodY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgKP7SodY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*-----------------------------*/
+
+
+
+
+
+/*-----------------------------*/
+/*--- MAIN PROPERTIES ---*/
+/*-----------------------------*/
+
+main {
+  padding: 0;
+  marging: 0;
+  height: 100vh; 
+  width: 100vw; 
+  background: red url('../img/background.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+*:focus { 
+  outline:none; 
+}
+
+.flex-wrap {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  margin: 0 10% 0 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-left {
+  flex: 1;
+  padding: 3%;
+  margin-right: -15%;
+}
+
+.flex-right {
+  flex: 1;
+  padding: 3%;
+}
+
+a, p {
+  color: #ddd;
+  font-size: 18px;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+/*-----------------------------*/
+
+
+
+
+/*-----------------------------*/
+/*--- WINDOWS ---*/
+/*-----------------------------*/
+.window { 
+  width: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 25px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 4px 4px 25px -10px rgba(0,0,0,1);
+  box-shadow: 4px 4px 25px -10px rgba(0,0,0,1);
+  border: 2px solid #ddd;
+  border-top: 0 solid red;
+  box-sizing:border-box;
+}
+
+.window-header { 
+  width: 100%; 
+  padding: 0.7em; 
+  background: rgba(221,221,221,0.1);
+  border: 2px solid #ddd;
+  border-left: 0 solid red;
+  border-right: 0 solid red;
+  box-sizing:border-box;
+  backdrop-filter: saturate(120%) blur(10px);
+}
+
+.window-header h1 {
+  position: absolute;
+  margin: -12px 12px 0 0;
+  right: 0;
+  color: #ddd;
+  font-size: 0.8em;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+.window-content h2 {
+  color: #ddd;
+  font-size: 0.85em;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+.window-content a {
+  margin-left: 20px;
+  color: #ddd;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+.window-content input {
+  position: absolute;
+  min-width: 150px;
+  margin-top: -10px;
+  background: rgba(221,221,221,0.5);
+  border: none;
+  font-size: 0.9em;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+.window-content input::placeholder {
+  color: #1a1e24;
+}
+
+.window-buttons {
+  width: .75em;
+  height: .75em;
+  background: #d9515d;
+  border-radius: 50%;
+  -webkit-box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+  box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+}
+
+.window-content {
+  width: 100%;
+  height: 80%;
+  padding: 1em;
+  background: rgba(221,221,221,0.1);
+}
+
+.uno {
+  height: 21em !important;
+}
+
+.dos {
+  height: 6.5em !important;
+  margin-bottom: 1em;
+  width: 60%;
+}
+
+.tres {
+  height: 13.5em !important;
+  width: 60%;
+}
+
+.img-galery {
+  background: url(https://i.imgur.com/w8Ec092.png)  center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
